@@ -1,0 +1,14 @@
+.encabezado {
+    color: blue;
+    font-variant: small-caps;
+
+}
+
+*#elemento-1 {
+    color: red;
+    font-size: 2rem;
+}
+
+#titulo {
+    text-decoration: underline;
+}
