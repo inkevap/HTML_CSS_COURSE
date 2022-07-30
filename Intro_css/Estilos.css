@@ -1,0 +1,48 @@
+h1 {
+    color:red;
+
+}
+
+/* Estoy probando colores y fuentes */
+p {
+    color: blue;
+    font-size: 15pt;
+
+}
+
+/*selectrores de ID*/
+
+/* Que todos los p con id #primera-noticia tengan este formato
+p#primera-noticia {
+    color: green;
+    font-size: 12pt;
+}
+*/
+
+#primera-noticia {
+    color: green;
+    font-size: 12pt;
+}
+
+#segunda-noticia {
+    color: darkmagenta;
+}
+
+.encabezado {
+    font-size: 24pt;
+    text-transform: capitalize;
+}
+
+/*Selector universal*/
+
+*.s {
+    color: yellow;
+}
+
+*.warning {
+    color: red;
+}
+
+.autor, .ubicacion, .fecha, h1, #segunda-noticia {
+    text-decoration: underline;
+}
