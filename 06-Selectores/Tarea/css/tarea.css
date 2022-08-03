@@ -6,3 +6,14 @@
     color: white;
     background-color: green;
 }
+
+.button:hover::before {
+    content: "hecho!";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
