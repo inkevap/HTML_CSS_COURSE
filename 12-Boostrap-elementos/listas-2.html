@@ -1,0 +1,104 @@
+<!-- Ejemplo de listas: https://getbootstrap.com/docs/5.2/components/list-group/  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas 2</title>
+    <link rel="stylesheet" href="boostrap-grid.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a
+              href="#list-home"
+              class="list-group-item list-group-item-action active"
+              data-bs-toggle="list"
+              role="tab"
+              aria-controls="list-home"
+              id="list-home-list"
+              >Home</a
+            >
+            <a
+              href="#list-profile"
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              role="tab"
+              aria-controls="list-profile"
+              id="list-profile-list"
+              >Profile</a
+            >
+            <a
+              href="#list-messages"
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              role="tab"
+              aria-controls="list-messages"
+              id="list-messages-list"
+              >Messages</a
+            >
+            <a
+              href="#list-settings"
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              role="tab"
+              aria-controls="list-settings"
+              id="list-settings-list"
+              >Settings</a
+            >
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-home"
+              role="tabpanel"
+              aria-labelledby="list-home-list"
+            >
+              Aqui se muestra tu home
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-profile"
+              role="tabpanel"
+              aria-labelledby="list-profile-list"
+            >
+              Aqui se muestra tu perfil 
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-messages"
+              role="tabpanel"
+              aria-labelledby="list-messages-list"
+            >
+              Aqui se muestran tus mensajes
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-settings"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              Aqui se muestran tus configuraciones
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+</html>
