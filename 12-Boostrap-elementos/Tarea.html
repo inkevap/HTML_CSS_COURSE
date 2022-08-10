@@ -1,0 +1,101 @@
+<!-- Ejemplo de spinners: https://getbootstrap.com/docs/5.2/components/card/  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de Interés en Bootstrap</title>
+    <link rel="stylesheet" href="boostrap-grid.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-light p-5 rounded-3">
+        <div class="cotainer-fluid pt-5">
+          <h1 class="display-5 fw-bold">¿Estas viviendo?</h1>
+          <p class="col-md-8 fs-4">
+            La vida solo tiene sentido en cuanto mas nos hacemos conscientes que pronto morimos, solo entonces somos capaces de pensar en vivir, y comprendemos que vivir es sufrir, reir, llorar y gozar.
+          </p>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal"
+          data-bs-target="#modal">La vida es bella</button>
+          <div class="modal fade" id="modal" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <h4 class="modal-header">El resto es una ilusion</h4>
+                <div class="modal-body">
+                  <p>Las probabilidades de que estes viviendo una ilusion de lo que realmente podrias estar viendo son muy altas, hacer te las preguntas correctas a ti mismo te pueden ayudar a descubrir que significa para ti estar vivo.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-danger" data-bs-dismiss="modal">
+                    Cerrar
+                  </button>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+<!-- ------------------------------------------------ -->
+    <div class="container">
+      <form action="">
+        <div class="row ">
+        <div class="col-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="text-nombre" placeholder=" ">
+                <label for="text-nombre">Nombre y apellido</label>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="text-apellido" placeholder=" ">
+                <label for="text-apellido">Numero de telefono</label>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="text-mensaje">Mensaje</label>
+                    <textarea class="form-control" id="text-mensaje" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+      </form>
+    </div>
+      <!-- -------------------------------------------- -->
+      <div class="container">
+        <div class="row ">
+            <div class="col text-center pb-3 ">
+        <div class="card" style="width: 15rem">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="image"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kevin Pocon</h5>
+              <p class="card-text">Estudiante de la vida, programador por pasion y eleccion, corredor de ultramaratones</p>
+            </div>
+            <div class="card-footer text-center">
+              <p>Inkev.ap@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</html>
